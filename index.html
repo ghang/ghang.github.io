@@ -95,13 +95,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##前言</p>
-<p>Hexo是一个好东西,比wordpress之类的好玩多了,当你用Hexo建立了一个个人博客之后,可能想到的就是如何部署到</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hexo是一个好东西,比wordpress之类的好玩多了,当你用Hexo建立了一个个人博客之后,可能想到的就是如何部署到云服务器上,但是我并不建议这么做,主要是因为云服务器其实只是相当于购买了使用权限,到期之后如果没有续费则会回收资源,这无疑并不适合搭建个人博客.所以搭建博客最好还是用github,只是可能会有被墙的风险.</p>
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>在腾讯云购买域名很简单,只需要先在域名注册的页面输入想注册的域名,然后查看是否已经被注册,如果没有被注册,就可以加到购物车并购买,推荐购买.cn后缀的域名,比较便宜而且国内解析速度比较快.</p>
+<h3 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h3><p>购买域名后就可以进入域名的管理页面来设定解析,github为个人页面提供了三种解析的方式:</p>
+<ul>
+<li>A记录：域名直接映射IP,IP为192.30.252.153或192.30.252.154</li>
+<li>如果域名提供商支持ALIAS或ANAME,将域名指向 username.github.io.这样可以在域名解析的时候得到一个动态的IP,这个IP是一台离你最近的镜像主机 </li>
+<li>CNMAE：如果你希望使用二级域名访问，将一个二级域名配置成CNAME，指向 username.github.io，这样可以在域名解析的时候得到一个动态的IP，这个IP是一台离你最近的镜像主机</li>
+</ul>
+<p>域名直接映射到IP的话,并不能通过域名直接找到博客地址,还需要CNAME解析,因此需要先在博客的source目录下新建CNAME文件,里边填上要解析的域名如test.cn.<br>然后在域名管理页面添加域名的A记录和CNAME记录:</p>
+<p><img src="/images/解析域名.jpg" alt="&quot;解析域名&quot;"></p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>在腾讯云购买域名后需要实名认证,没有实名认证是不允许解析的,所以需要在购买域名后尽快完成实名认证,否则即便解析了域名也无法通过域名直接访问博客.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ghang.github.io/2017/09/16/用腾讯云解析Hexo站点/" data-id="cj7myg0yu0001tkfikntfam28" class="article-share-link">Share</a>
+      <a data-url="https://ghang.github.io/2017/09/16/用腾讯云解析Hexo站点/" data-id="cj7n1idgc0001i0fi3vfcwygc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/域名解析/">域名解析</a></li></ul>
@@ -153,7 +162,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ghang.github.io/2017/09/16/不正常的自我介绍/" data-id="cj7myg0yu0000tkfiqzckxdh7" class="article-share-link">Share</a>
+      <a data-url="https://ghang.github.io/2017/09/16/不正常的自我介绍/" data-id="cj7n1idgc0000i0fiziyyu220" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自我介绍/">自我介绍</a></li></ul>
